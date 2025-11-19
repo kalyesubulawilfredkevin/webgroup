@@ -25,3 +25,43 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
+// ABOUT US ///
+////
+document.addEventListener("DOMContentLoaded", function () {
+  // Team member click interaction
+  document.querySelectorAll(".card-body img").forEach((img) => {
+    img.addEventListener("click", function () {
+      const name =
+        this.closest(".card-body").querySelector(".card-title").textContent;
+      const role =
+        this.closest(".card-body").querySelector(".text-primary").textContent;
+      alert(
+        `Meet ${name} - ${role}\n\nSend us a message to connect with our team!`
+      );
+    });
+  });
+});
+// END /////
+
+/// index // home page
+//  Homepage
+document.addEventListener("DOMContentLoaded", function () {
+  // Hero button animation
+  document.querySelector(".btn-hero").addEventListener("click", function (e) {
+    e.preventDefault();
+    alert("🚀 Let's start your adventure! Contact us to plan your dream trip.");
+    this.style.transform = "scale(0.95)";
+    setTimeout(() => (this.style.transform = "scale(1)"), 200);
+  });
+
+  // Newsletter form
+  document.querySelector("form").addEventListener("submit", function (e) {
+    e.preventDefault();
+    const email = this.querySelector('input[type="email"]').value;
+    alert(`📧 Thanks! We'll send travel updates to ${email}`);
+    this.reset();
+  });
+});
+/// END .//
+

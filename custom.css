@@ -1,0 +1,55 @@
+#hero2 {
+    height: 40vh; /* full screen height (you can use 70vh if you prefer) */
+    background-color: gray;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+
+.parent-card {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.elephant {
+  width: 600px;
+  height: 400px;
+}
+.card-imgg {
+  width: 600px;
+  height: 400px;
+  border-radius: 4px;
+}
+.long-card {
+  flex-wrap: wrap;
+}
+.card-img-topp {
+  height: 276px;
+}
+.row {
+  margin: 2px;
+}
+
+.card:hover {
+  transform: translateY(-20px);
+}
+.headd{
+  text-decoration-line: underline;
+}
+
+.footer{
+  display: flex;
+  justify-content: space-around;
+  background-color:darkslategrey;
+}
+.footer h3{
+  color: antiquewhite;
+}
+.footer p{
+  color: gray;
+}
+.rights{
+  background-color:darkslategrey;
+}
+

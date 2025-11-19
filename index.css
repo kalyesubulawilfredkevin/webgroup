@@ -1,0 +1,102 @@
+/* =======
+                    GALLERY 
+                    ========*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#hero2 {
+    height: 40vh; /* full screen height (you can use 70vh if you prefer) */
+    background-color: gray;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.gallery-item {
+  height: 200px; /* FIXED HEIGHT */
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%; /* FILL THE BOX */
+  object-fit: cover; /* PREVENT WHITE SPACES */
+  display: block;
+}
+
+/* Flexbox layout for gallery rows */
+.gallery-row {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* Individual gallery item */
+.gallery-item {
+  max-width: 250px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect */
+.gallery-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+.footer{
+  display: flex;
+  justify-content: space-around;
+  background-color:darkslategrey;
+}
+.footer h3{
+  color: antiquewhite;
+}
+.footer p{
+  color: gray;
+}
+.rights{
+  background-color:darkslategrey;
+}
+/* 
+   RESPONSIVE DESIGN
+    */
+
+/* Large tablets (≤ 992px) */
+@media (max-width: 992px) {
+  .gallery-item {
+    max-width: 220px;
+    height: 180px;
+  }
+}
+
+/* Tablets & mobile (≤ 768px) */
+@media (max-width: 768px) {
+  /* Make gallery items fit 2 per row */
+  .gallery-item {
+    max-width: 45%;
+    height: 160px;
+  }
+
+  .gallery-row {
+    justify-content: center;
+    gap: 15px;
+  }
+}
+
+/* Small mobile (≤ 480px) */
+@media (max-width: 480px) {
+  /* Stack items 1 per row */
+  .gallery-item {
+    max-width: 100%;
+    height: 140px;
+  }
+
+  .gallery-row {
+    gap: 12px;
+  }
+}
+/* END OF GALLERY */

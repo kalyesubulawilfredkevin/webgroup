@@ -289,7 +289,7 @@
   }
 
   .story-image img {
-    max-width: 100%;          /* Make image fit screen */
+    max-width:fit-content;          /* Make image fit screen */
  flex-direction: column;
   }
 }

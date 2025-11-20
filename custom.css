@@ -67,7 +67,19 @@
 
 /* Mobile Devices (≤ 768px) */
 @media (max-width: 768px) {
+.parent-card {
+    justify-content: center;
+  }
 
+  .long-card {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .long-card .card {
+    width: 100%;
+    max-width: 500px;
+  }
     .footer {
         flex-direction: column;
         align-items: center;

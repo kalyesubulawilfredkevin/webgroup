@@ -280,19 +280,7 @@
     margin-bottom: 5px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.3);
 }
-/* --- Responsive fix for small screens --- */
-@media (max-width: 768px) {
-  .story {
-    flex-direction: column;   /* Stack text and image */
-    text-align: center;       /* Looks cleaner on mobile */
-    padding: 2rem 1rem;
-  }
 
-  .story-image img {
-    max-width:fit-content;          /* Make image fit screen */
- flex-direction: column;
-  }
-}
 
 
 

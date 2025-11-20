@@ -281,7 +281,59 @@
     box-shadow: 0 4px 15px rgba(0,0,0,0.3);
 }
 
+/* Tablets */
+@media (max-width: 992px) {
+  .story {
+    padding: 2rem;
+  }
+}
 
+/* Mobile screens */
+@media (max-width: 768px) {
+
+  #hero2 {
+    height: auto;
+    padding: 4rem 1rem;
+  }
+
+  /* Stack story content */
+  .story {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .story-image img {
+    max-width: 100%;
+  }
+
+  /* Cards in "Meet the team" become full-width */
+  .feature-card {
+    padding: 2rem;
+  }
+
+  /* Footer stacked */
+  .footer {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/* Extra small devices */
+@media (max-width: 576px) {
+
+  h1, h2 {
+    font-size: 1.5rem;
+  }
+
+  .story {
+    padding: 1.5rem 1rem;
+  }
+
+  .feature-card img {
+    width: 100px;
+    height: 100px;
+  }
+}
 
 
    /*  ======

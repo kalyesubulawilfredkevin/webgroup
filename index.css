@@ -290,6 +290,7 @@
 
   .story-image img {
     max-width: 100%;          /* Make image fit screen */
+ flex-direction: column;
   }
 }
 

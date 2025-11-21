@@ -1,25 +1,29 @@
 // =========
 // navbar
-document.addEventListener("DOMContentLoaded", function () {
-  const navbarToggler = document.querySelector(".navbar-toggler");
+// waits until the entire html loads before running the javascript
+document.addEventListener("DOMContentLoaded", function () {  
+  // finds the button that opens/closes the navbar menue on small screens
+  const navbarToggler = document.querySelector(".navbar-toggler"); 
+  // finds the collapsible menue section that contains the  navigation links
   const navbarCollapse = document.getElementById("navbarNav");
-
+// When the toggle button is clicked, the dropdown is shown
   navbarToggler.addEventListener("click", function () {
     navbarCollapse.classList.toggle("show");
   });
 });
 
 //=====Gallery====//
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", function () {   // waits until the entire html loads before running the javascript
   // Gets all gallery images
   const galleryImages = document.querySelectorAll(".gallery-item img");
 
   // Add click functionality to each image
+  // loops through each image
   galleryImages.forEach((img) => {
     // Add hover effect
     img.addEventListener("mouseover", function () {
-      this.style.transform = "scale(1.05)";
-      this.style.transition = "transform 0.3s ease";
+      this.style.transform = "scale(1.05)";  // enlages the image for zoom effect
+      this.style.transition = "transform 0.3s ease"; // makes the zoom effect smooth
     });
 
     // Remove hover effect
@@ -38,6 +42,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // ABOUT US ///
 ////
+// waits until the entire html loads before running the javascript
 document.addEventListener("DOMContentLoaded", function () {
   // Team member click interaction
   document.querySelectorAll(".card-body img").forEach((img) => {
@@ -56,26 +61,31 @@ document.addEventListener("DOMContentLoaded", function () {
 
 /// index // home page
 //  Homepage
+// waits until the entire html loads before running the javascript
 document.addEventListener("DOMContentLoaded", function () {
   // Hero button animation
+  //  function (e)is the callback function that runs when the button is clicked
   document.querySelector(".btn-hero").addEventListener("click", function (e) {
+    // Prevents the default behavior of the button click
     e.preventDefault();
     alert("🚀 Let's start your adventure! Contact us to plan your dream trip.");
     this.style.transform = "scale(0.95)";
+    // Shrinks the button slightly to create a “press” animation
     setTimeout(() => (this.style.transform = "scale(1)"), 200);
+    // after 200 milseconds the button returns to the normal size
   });
 
   // Newsletter form
-  document.querySelector("form").addEventListener("submit", function (e) {
-    e.preventDefault();
-    const email = this.querySelector('input[type="email"]').value;
+  document.querySelector("form").addEventListener("submit", function (e) { // runs when the form is submitted
+    e.preventDefault(); //prevents the form from submmiting and rteloading the page again
+    const email = this.querySelector('input[type="email"]').value; // finds the email input field
     alert(`📧 Thanks! We'll send travel updates to ${email}`);
     this.reset();
   });
 });
 /// END .//
 //// contact us ///
-// 
+// // waits until the entire html loads before running the javascrip
 document.addEventListener('DOMContentLoaded', function() {
     
     // Contact form submission

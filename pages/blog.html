@@ -1,461 +1,412 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>🌍 Wanderlust Tours</title>
-    <link rel="icon" type="image/x-icon" href="../photos/favicon.jpg" />
 
-    <!-- Bootstrap 5 CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <!-- Google Font -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
-      rel="stylesheet"
-    />
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="../custom.css" />
-  </head>
-  <body>
-    <!-- Navbar -->
-    <nav
-      class="navbar navbar-expand-lg navbar-dark bg-secondary fixed-top shadow-sm"
-    >
-      <div class="container">
-        <!-- Brand -->
-        <a class="navbar-brand fw-bold" href="#">🌍 Wanderlust Tours</a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>🌍 Wanderlust Tours</title>
+  <link rel="icon" type="image/x-icon" href="../photos/favicon.jpg" />
 
-        <!-- Mobile Toggle Button -->
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="../custom.css" />
 
-        <!-- Menu Items -->
-        <div
-          class="collapse navbar-collapse justify-content-end"
-          id="navbarNav"
-        >
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="../index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./about.html">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./blog.html">Blog</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./contact.html">Contact</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./gallery.html">Gallery</a>
-            </li>
-          </ul>
-        </div>
+  <script defer src="bjavascript.js"></script>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-secondary fixed-top shadow-sm">
+    <div class="container">
+      <!-- Brand -->
+      <a class="navbar-brand fw-bold" href="#">🌍 Wanderlust Tours</a>
+
+      <!-- Mobile Toggle Button -->
+      <button class="navbar-toggler" type="button" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+
+      <!-- Menu Items -->
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./blog.html">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./contact.html">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./gallery.html">Gallery</a>
+          </li>
+        </ul>
       </div>
-    </nav>
-    <!--upper part-->
-    <section
-      id="hero2"
-      class="text-center d-flex align-items-center justify-content-center flex-column bg-secondary"
-    >
-      <div class="container text-white">
-        <h1 class="display-4 fw-bold">Travel Blog</h1>
-        <p class="lead mb-4">
-          Stories, tips, and inspiration for your next adventure
+    </div>
+  </nav>
+  <!--upper part-->
+  <section id="hero2" class="text-center d-flex align-items-center justify-content-center flex-column bg-secondary">
+    <div class="container text-white">
+      <h1 class="display-4 fw-bold">Travel Blog</h1>
+      <p class="lead mb-4">
+        Stories, tips, and inspiration for your next adventure
+      </p>
+    </div>
+  </section>
+  <!--cards -->
+  <div></div>
+  <div class="parent-card d-flex justify-content-around m-3 p-3 fade-in">
+    <div class="card m-2" style="width: 18rem">
+      <img src="../photos/inside the pyramid.jpg" class="card-img-top" alt="..." />
+      <div class="card-body">
+        <h5 class="card-title">Egyptian pyramids</h5>
+        <p class="card-text">
+          Visit the great pyramids in Egypt with us as we show you the
+          different places.<br />
         </p>
-      </div>
-    </section>
-    <!--cards -->
-    <div></div>
-    <div class="parent-card d-flex justify-content-around m-3 p-3">
-      <div class="card m-2" style="width: 18rem">
-        <img
-          src="../photos/inside the pyramid.jpg"
-          class="card-img-top"
-          alt="..."
-        />
-        <div class="card-body">
-          <h5 class="card-title">Egyptian pyramids</h5>
-          <p class="card-text">
-            Visit the great pyramids in Egypt with us as we show you the
-            different places.<br />
-          </p>
-          <a href="#culture" class="btn btn-success">Culture</a>
-        </div>
-      </div>
-      <div class="card m-2" style="width: 18rem">
-        <img
-          src="../photos/tour gi2.jpg "
-          class="card-img-top h-110"
-          alt="..."
-        />
-        <div class="card-body">
-          <h5 class="card-title">Sight seeing</h5>
-          <p class="card-text">
-            Visit the great plans and see with us the vast nature with in
-            africa.<br /><br />
-          </p>
-          <a href="#african-tours" class="btn btn-success">Tours</a>
-        </div>
-      </div>
-      <div class="card m-2" style="width: 18rem">
-        <img
-          src="../photos/little gorrila2.jpg"
-          class="card-img-top"
-          alt="..."
-        />
-        <div class="card-body">
-          <h5 class="card-title">Wild life</h5>
-          <p class="card-text">
-            join us as we venture into the mountains to see the great apes and
-            gorrilas in kidepo
-          </p>
-          <a href="#ape" class="btn btn-success">Wild life</a>
-        </div>
-      </div>
-      <div class="card m-2" style="width: 18rem">
-        <img src="../photos/kobe.jpg" class="card-img-top" alt="..." />
-        <div class="card-body">
-          <h5 class="card-title">African Kobe</h5>
-          <p class="card-text">
-            come visit the african koe and venture with us through the African
-            plans
-          </p>
-          <a href="#wild-life" class="btn btn-success">visit</a>
-        </div>
+        <a href="#culture" class="btn btn-success">Culture</a>
       </div>
     </div>
-    <!-- end -->
+    <div class="card m-2" style="width: 18rem">
+      <img src="../photos/tour gi2.jpg " class="card-img-top h-110" alt="..." />
+      <div class="card-body">
+        <h5 class="card-title">Sight seeing</h5>
+        <p class="card-text">
+          Visit the great plans and see with us the vast nature with in
+          africa.<br /><br />
+        </p>
+        <a href="#african-tours" class="btn btn-success">Tours</a>
+      </div>
+    </div>
+    <div class="card m-2" style="width: 18rem">
+      <img src="../photos/little gorrila2.jpg" class="card-img-top" alt="..." />
+      <div class="card-body">
+        <h5 class="card-title">Wild life</h5>
+        <p class="card-text">
+          join us as we venture into the mountains to see the great apes and
+          gorrilas in kidepo
+        </p>
+        <a href="#ape" class="btn btn-success">Wild life</a>
+      </div>
+    </div>
+    <div class="card m-2" style="width: 18rem">
+      <img src="../photos/kobe.jpg" class="card-img-top" alt="..." />
+      <div class="card-body">
+        <h5 class="card-title">African Kobe</h5>
+        <p class="card-text">
+          come visit the african koe and venture with us through the African
+          plans
+        </p>
+        <a href="#wild-life" class="btn btn-success">visit</a>
+      </div>
+    </div>
+  </div>
+  <!-- end -->
 
-    <!-- cardimage -->
-    <div class="long-card d-flex m-3">
-      <div class="card bg-dark text-white elephant m-3">
-        <img src="../photos/zebras1.jpg" class="card-imgg" alt="..." />
-        <div class="card-img-overlay">
-          <h5 class="card-title">Zebra</h5>
-          <p class="card-text">This is an African zebra.</p>
-          <p class="card-text">Last updated 3 years ago</p>
-        </div>
-      </div>
-
-      <div class="card bg-dark text-white elephant m-3">
-        <img src="../photos/elephants.jpg" class="card-imgg" alt="..." />
-        <div class="card-img-overlay">
-          <h5 class="card-title">African elephant</h5>
-          <p class="card-text">
-            This is the African gentle giant prestigious to many africans
-          </p>
-          <p class="card-text">Last updated 4days ago</p>
-        </div>
-      </div>
-    </div>
-    <!-- card image end -->
-    <!-- startlongcard -->
-    <div class="long-card d-flex">
-      <div class="card m-3 d-flex" style="min-width: 450px">
-        <div class="row g-0">
-          <div class="col-md-4">
-            <img
-              src="../photos/tty2.jpg"
-              class="img-fluid rounded-start"
-              alt="..."
-            />
-          </div>
-          <div class="col-md-8">
-            <div class="card-body">
-              <h5 class="card-title">
-                The Ultimate Guide to Solo Female Travel
-              </h5>
-              <p class="card-text">
-                Empowering tips and safety advice for women traveling alone,
-                plus the best destinations for solo female travelers
-              </p>
-              <p class="card-text">
-                <small class="text-muted">Last updated 3 mins ago</small>
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="card m-3" style="min-width: 450px" id="wild-life">
-        <div class="row g-0">
-          <div class="col-md-4">
-            <img
-              src="../photos/migration2.jpg"
-              class="img-fluid rounded-start"
-              alt="..."
-            />
-          </div>
-          <div class="col-md-8">
-            <div class="card-body">
-              <h5 class="card-title">
-                Sustainable Tourism: Travel Responsibly
-              </h5>
-              <p class="card-text">
-                Learn how to minimize your environmental impact while traveling
-                and support local communities around the world.
-              </p>
-              <p class="card-text">
-                <small class="text-muted">Last updated 3 mins ago</small>
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- end longcard -->
-    <div class="row m-2">
-      <div class="col-md-6">
-        <div
-          class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"
-        >
-          <div class="col p-4 d-flex flex-column position-static bg-secondary text-white">
-            <strong class="d-inline-block mb-2 text-primary">World</strong>
-            <h3 class="mb-0">
-              Adventure Photography: Capturing the Perfect Shot
-            </h3>
-            <div class="mb-1 text-muted">Nov 12</div>
-            <p class="card-text mb-auto">
-              Master the art of adventure photography with these professional
-              tips and techniques for stunning travel photos
-            </p>
-            <a href="#" class="stretched-link">Continue reading</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6">
-        <div
-          class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"
-        >
-          <div class="col p-4 d-flex flex-column position-static bg-secondary text-white">
-            <strong class="d-inline-block mb-2 text-success">Design</strong>
-            <h3 class="mb-0">
-              Budget Travel: How to See the World Without Breaking the Bank
-            </h3>
-            <div class="mb-1 text-muted">Nov 11</div>
-            <p class="mb-auto">
-              Practical strategies and insider secrets for traveling on a budget
-              while still having amazing experiences.
-            </p>
-            <a href="#" class="stretched-link text-success">Continue reading</a>
-          </div>
-        </div>
+  <!-- cardimage -->
+  <div class="long-card d-flex m-3 fade-in">
+    <div class="card bg-dark text-white elephant m-3">
+      <img src="../photos/zebras1.jpg" class="card-imgg" alt="..." />
+      <div class="card-img-overlay">
+        <h5 class="card-title">Zebra</h5>
+        <p class="card-text">This is an African zebra.</p>
+        <p class="card-text">Last updated 3 years ago</p>
       </div>
     </div>
 
-    <!-- ev -->
-    <div class="row row-cols-1 row-cols-md-3 g-4 m-3">
-      <div class="col">
-        <div class="card h-100">
-          <img src="../photos/lioness.jpg" class="card-img-topp" alt="..." />
-          <div class="card-body">
-            <h5 class="card-title">Cape lions</h5>
-            <p class="card-text">
-              Tour with us as we explore and visit the rarest African lions. The
-              cape lions are native to South Africa
-            </p>
-          </div>
-          <div class="card-footer">
-            <small class="text-muted">Last updated 3 months ago</small>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card h-100">
-          <img
-            src="../photos/water buffalo.jpg "
-            class="card-img-top"
-            alt="..."
-          />
-          <div class="card-body">
-            <h5 class="card-title">African buffalo</h5>
-            <p class="card-text">
-              These are the largest african buffalos come tour with us to
-              explore the famous African water buffalo.
-            </p>
-          </div>
-          <div class="card-footer">
-            <small class="text-muted">Last updated 3 weeks ago</small>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card h-100" id="ape">
-          <img src="../photos/gorilla.jpg" class="card-img-top" alt="..." />
-          <div class="card-body">
-            <h5 class="card-title">Gorilla</h5>
-            <p class="card-text">
-              Ugandan silver back gorilla one of natures's greatest primates
-            </p>
-          </div>
-          <div class="card-footer">
-            <small class="text-muted">Last updated 3 mins ago</small>
-          </div>
-        </div>
+    <div class="card bg-dark text-white elephant m-3">
+      <img src="../photos/elephants.jpg" class="card-imgg" alt="..." />
+      <div class="card-img-overlay">
+        <h5 class="card-title">African elephant</h5>
+        <p class="card-text">
+          This is the African gentle giant prestigious to many africans
+        </p>
+        <p class="card-text">Last updated 4days ago</p>
       </div>
     </div>
-    <p>
-      <center>
-        <h1 id="culture">AFRICAN CULTURE</h1>
-      </center>
-    </p>
-    <p>
-      <center>
-        <h3>Come tour with us the different african cultures,</h3>
-      </center>
-    </p>
-    <p>
-      <center>
-        <h3>sites and different cultural heritages.</h3>
-      </center>
-    </p>
-    <!-- a-culture -->
-    <div class="row row-cols-1 row-cols-md-3 g-4 m-3">
-      <div class="col">
-        <div class="card h-100">
-          <img src="../photos/jump2.jpg" class="card-img-top" alt="..." />
-          <div class="card-body">
-            <h5 class="card-title">African cultural dances</h5>
-            <p class="card-text">
-              Tour with us as we explore and visit the rarest African cultures
-              and mostly the dances that make the unique.
-            </p>
-          </div>
-          <div class="card-footer">
-            <small class="text-muted">Last updated 2 months ago</small>
-          </div>
+  </div>
+  <!-- card image end -->
+  <!-- startlongcard -->
+  <div class="long-card d-flex fade-in">
+    <div class="card m-3 d-flex" style="min-width: 450px">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img src="../photos/tty2.jpg" class="img-fluid rounded-start" alt="..." />
         </div>
-      </div>
-      <div class="col">
-        <div class="card h-100">
-          <img
-            src="../photos/masai unity2.jpg "
-            class="card-img-topp"
-            alt="..."
-          />
+        <div class="col-md-8">
           <div class="card-body">
-            <h5 class="card-title">Maasai people and culture</h5>
+            <h5 class="card-title">
+              The Ultimate Guide to Solo Female Travel
+            </h5>
             <p class="card-text">
-              these were the maasai people of kenya, we esplore their different
-              cultures, foods and animal raring skills.
+              Empowering tips and safety advice for women traveling alone,
+              plus the best destinations for solo female travelers
             </p>
-          </div>
-          <div class="card-footer">
-            <small class="text-muted">Last updated 3 months ago</small>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card h-100">
-          <img src="../photos/masks2.jpg" class="card-img-topp" alt="..." />
-          <div class="card-body">
-            <h5 class="card-title">African cultural masks</h5>
             <p class="card-text">
-              Come explore with us the different African heritages contact our
-              travel agency for more information and wonderous adventures.
-            </p>
-          </div>
-          <div class="card-footer">
-            <small class="text-muted">Last updated 1 year ago</small>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- a-culture ends -->
-    <p>
-      <center>
-        <h1 id="african-tours">African Tours</h1>
-      </center>
-    </p>
-    <!-- other cards -->
-    <div class="row row-cols-1 row-cols-md-2 g-4">
-      <div class="col">
-        <div class="card">
-          <img src="../photos/ttvan.jpg" class="card-img-top" alt="..." />
-          <div class="card-body">
-            <h5 class="card-title">Murchison falls</h5>
-            <p class="card-text">
-              This is home to one of Africa's gentle giants and orther many
-              animals come tour with us .
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card">
-          <img
-            src="../photos/tea picking.jpg "
-            class="card-img-top"
-            alt="..."
-          />
-          <div class="card-body">
-            <h5 class="card-title">Tea picking</h5>
-            <p class="card-text">
-              Tea picking is one of the most productive econnomic activities in
-              Africa and for this particular one we visited tea plantations in
-              Uganda.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card">
-          <img src="../photos/deert2.jpg" class="card-img-top" alt="..." />
-          <div class="card-body">
-            <h5 class="card-title">Sahara desert</h5>
-            <p class="card-text">
-              This is one of the largest deserts in Africa and has vast
-              scenaries and touring places. come tour with us and enjoy our
-              services.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card">
-          <img src="../photos/falls2.jpg" class="card-img-top" alt="..." />
-          <div class="card-body">
-            <h5 class="card-title">Victoria falls</h5>
-            <p class="card-text">
-              This is one of the most beautiful scenaries in africa located in
-              zambia come tour wit us to see the wonders of the world.
+              <small class="text-muted">Last updated 3 mins ago</small>
             </p>
           </div>
         </div>
       </div>
     </div>
-    <!-- endorther -->
-    <!--footer-->
-    <section>
-      <footer>
-        <div class="footer">
-          <div class="p-4">
-            <h3>🌍 Wanderlust Tours</h3>
-            <p>your gateway to amazing adventures around the world</p>
-            <h3>ERIC SSUUBI</h3>
-            <P>2025-B291-22458</P>
-          </div>
-          <div class="p-4">
-            <h3>contact info</h3>
-            <p>📧 info@wanderlusttours.com</p>
-            <p>📞 +1 (555) 123-4567</p>
-            <p>📍 123 Travel Street, Adventure City</p>
+    <div class="card m-3" style="min-width: 450px" id="wild-life">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img src="../photos/migration2.jpg" class="img-fluid rounded-start" alt="..." />
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title">
+              Sustainable Tourism: Travel Responsibly
+            </h5>
+            <p class="card-text">
+              Learn how to minimize your environmental impact while traveling
+              and support local communities around the world.
+            </p>
+            <p class="card-text">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </p>
           </div>
         </div>
-        <div class="rights text-center">
-          @2025 wanderlust tours. All rights reserved.
+      </div>
+    </div>
+  </div>
+  <!-- end longcard -->
+  <div class="row m-2 fade-in">
+    <div class="col-md-6">
+      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static bg-secondary text-white">
+          <strong class="d-inline-block mb-2 text-primary">World</strong>
+          <h3 class="mb-0">
+            Adventure Photography: Capturing the Perfect Shot
+          </h3>
+          <div class="mb-1 text-muted">Nov 12</div>
+          <p class="card-text mb-auto">
+            Master the art of adventure photography with these professional
+            tips and techniques for stunning travel photos
+          </p>
+          <a href="#" class="stretched-link">Continue reading</a>
         </div>
-      </footer>
-    </section>
-  </body>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static bg-secondary text-white">
+          <strong class="d-inline-block mb-2 text-success">Design</strong>
+          <h3 class="mb-0">
+            Budget Travel: How to See the World Without Breaking the Bank
+          </h3>
+          <div class="mb-1 text-muted">Nov 11</div>
+          <p class="mb-auto">
+            Practical strategies and insider secrets for traveling on a budget
+            while still having amazing experiences.
+          </p>
+          <a href="#" class="stretched-link text-success">Continue reading</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ev -->
+  <div class="row row-cols-1 row-cols-md-3 g-4 m-3">
+    <div class="col">
+      <div class="card h-100">
+        <img src="../photos/lioness.jpg" class="card-img-topp" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Cape lions</h5>
+          <p class="card-text">
+            Tour with us as we explore and visit the rarest African lions. The
+            cape lions are native to South Africa
+          </p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Last updated 3 months ago</small>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="../photos/water buffalo.jpg " class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">African buffalo</h5>
+          <p class="card-text">
+            These are the largest african buffalos come tour with us to
+            explore the famous African water buffalo.
+          </p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Last updated 3 weeks ago</small>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100" id="ape">
+        <img src="../photos/gorilla.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Gorilla</h5>
+          <p class="card-text">
+            Ugandan silver back gorilla one of natures's greatest primates
+          </p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Last updated 3 mins ago</small>
+        </div>
+      </div>
+    </div>
+  </div>
+  <p>
+    <center>
+      <h1 id="culture">AFRICAN CULTURE</h1>
+    </center>
+  </p>
+  <p>
+    <center>
+      <h3>Come tour with us the different african cultures,</h3>
+    </center>
+  </p>
+  <p>
+    <center>
+      <h3>sites and different cultural heritages.</h3>
+    </center>
+  </p>
+  <!-- a-culture -->
+  <div class="row row-cols-1 row-cols-md-3 g-4 m-3">
+    <div class="col">
+      <div class="card h-100">
+        <img src="../photos/jump2.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">African cultural dances</h5>
+          <p class="card-text">
+            Tour with us as we explore and visit the rarest African cultures
+            and mostly the dances that make the unique.
+          </p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Last updated 2 months ago</small>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="../photos/masai unity2.jpg " class="card-img-topp" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Maasai people and culture</h5>
+          <p class="card-text">
+            these were the maasai people of kenya, we esplore their different
+            cultures, foods and animal raring skills.
+          </p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Last updated 3 months ago</small>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="../photos/masks2.jpg" class="card-img-topp" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">African cultural masks</h5>
+          <p class="card-text">
+            Come explore with us the different African heritages contact our
+            travel agency for more information and wonderous adventures.
+          </p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Last updated 1 year ago</small>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- a-culture ends -->
+  <p>
+    <center>
+      <h1 id="african-tours">African Tours</h1>
+    </center>
+  </p>
+  <!-- other cards -->
+  <div class="row row-cols-1 row-cols-md-2 g-4">
+    <div class="col">
+      <div class="card">
+        <img src="../photos/ttvan.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Murchison falls</h5>
+          <p class="card-text">
+            This is home to one of Africa's gentle giants and orther many
+            animals come tour with us .
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="../photos/tea picking.jpg " class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Tea picking</h5>
+          <p class="card-text">
+            Tea picking is one of the most productive econnomic activities in
+            Africa and for this particular one we visited tea plantations in
+            Uganda.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="../photos/deert2.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Sahara desert</h5>
+          <p class="card-text">
+            This is one of the largest deserts in Africa and has vast
+            scenaries and touring places. come tour with us and enjoy our
+            services.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="../photos/falls2.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Victoria falls</h5>
+          <p class="card-text">
+            This is one of the most beautiful scenaries in africa located in
+            zambia come tour wit us to see the wonders of the world.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- endorther -->
+  <!--footer-->
+  <section>
+    <footer>
+      <div class="footer">
+        <div class="p-4">
+          <h3>🌍 Wanderlust Tours</h3>
+          <p>your gateway to amazing adventures around the world</p>
+          <h3>ERIC SSUUBI</h3>
+          <P>2025-B291-22458</P>
+        </div>
+        <div class="p-4">
+          <h3>contact info</h3>
+          <p>📧 info@wanderlusttours.com</p>
+          <p>📞 +1 (555) 123-4567</p>
+          <p>📍 123 Travel Street, Adventure City</p>
+        </div>
+      </div>
+      <div class="rights text-center">
+        @2025 wanderlust tours. All rights reserved.
+      </div>
+    </footer>
+  </section>
+</body>
+
 </html>

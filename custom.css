@@ -1,11 +1,10 @@
 #hero2 {
-    height: 40vh; /* full screen height (you can use 70vh if you prefer) */
-    background-color: gray;
-    background-size: cover;
-    background-position: center;
-    position: relative;
+  height: 40vh;
+  background-color: gray;
+  background-size: cover;
+  background-position: center;
+  position: relative;
 }
-
 
 .parent-card {
   display: flex;
@@ -34,22 +33,21 @@
 .card:hover {
   transform: translateY(-20px);
 }
-.headd{
+.headd {
   text-decoration-line: underline;
 }
 
-.footer{
+.footer {
   display: flex;
   justify-content: space-around;
-  background-color:darkslategrey;
+  background-color: darkslategrey;
 }
-.footer h3{
+.footer h3 {
   color: antiquewhite;
 }
-.footer p{
+.footer p {
   color: gray;
 }
-.rights{
-  background-color:darkslategrey;
+.rights {
+  background-color: darkslategrey;
 }
-

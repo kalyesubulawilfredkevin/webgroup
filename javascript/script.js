@@ -1,10 +1,9 @@
 // =========
 // navbar
 // waits until the entire html loads before running the javascript
-document.addEventListener("DOMContentLoaded", function () {  
-  
-  const navbarToggler = document.querySelector(".navbar-toggler"); 
-  
+document.addEventListener("DOMContentLoaded", function () {
+  const navbarToggler = document.querySelector(".navbar-toggler");
+
   const navbarCollapse = document.getElementById("navbarNav");
 
   navbarToggler.addEventListener("click", function () {
@@ -13,7 +12,8 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 //=====Gallery====//
-document.addEventListener("DOMContentLoaded", function () {   // waits until the entire html loads before running the javascript
+document.addEventListener("DOMContentLoaded", function () {
+  // waits until the entire html loads before running the javascript
   // Gets all gallery images
   const galleryImages = document.querySelectorAll(".gallery-item img");
 
@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {   // waits until the
   galleryImages.forEach((img) => {
     // Add hover effect
     img.addEventListener("mouseover", function () {
-      this.style.transform = "scale(1.05)";  // enlages the image for zoom effect
+      this.style.transform = "scale(1.05)"; // enlages the image for zoom effect
       this.style.transition = "transform 0.3s ease"; // makes the zoom effect smooth
     });
 
@@ -76,7 +76,8 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   // Newsletter form
-  document.querySelector("form").addEventListener("submit", function (e) { // runs when the form is submitted
+  document.querySelector("form").addEventListener("submit", function (e) {
+    // runs when the form is submitted
     e.preventDefault(); //prevents the form from submmiting and rteloading the page again
     const email = this.querySelector('input[type="email"]').value; // finds the email input field
     alert(`📧 Thanks! We'll send travel updates to ${email}`);
@@ -86,22 +87,19 @@ document.addEventListener("DOMContentLoaded", function () {
 /// END .//
 //// contact us ///
 // // waits until the entire html loads before running the javascrip
-document.addEventListener('DOMContentLoaded', function() {
-    
-    // Contact form submission
-    document.querySelector('form').addEventListener('submit', function(e) {
-        e.preventDefault();
-        
-        const name = this.querySelector('input[type="text"]').value;
-        const email = this.querySelector('input[type="email"]').value;
-        
-        if (name && email) {
-            alert(`✅ Thank you ${name}! We'll contact you at ${email} soon.`);
-            this.reset();
-        } else {
-            alert('📝 Please fill in all required fields (name and email).');
-        }
-    });
-    
-    
+document.addEventListener("DOMContentLoaded", function () {
+  // Contact form submission
+  document.querySelector("form").addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    const name = this.querySelector('input[type="text"]').value;
+    const email = this.querySelector('input[type="email"]').value;
+
+    if (name && email) {
+      alert(`✅ Thank you ${name}! We'll contact you at ${email} soon.`);
+      this.reset();
+    } else {
+      alert("📝 Please fill in all required fields (name and email).");
+    }
+  });
 });

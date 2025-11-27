@@ -17,13 +17,13 @@ document.addEventListener("DOMContentLoaded", function () {
   // Gets all gallery images
   const galleryImages = document.querySelectorAll(".gallery-item img");
 
-  // Add click functionality to each image
+  
   // loops through each image
   galleryImages.forEach((img) => {
     // Add hover effect
     img.addEventListener("mouseover", function () {
-      this.style.transform = "scale(1.05)"; // enlages the image for zoom effect
-      this.style.transition = "transform 0.3s ease"; // makes the zoom effect smooth
+      this.style.transform = "scale(1.05)"; 
+      this.style.transition = "transform 0.3s ease"; 
     });
 
     // Remove hover effect

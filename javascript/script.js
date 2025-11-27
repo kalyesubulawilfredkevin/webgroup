@@ -2,11 +2,11 @@
 // navbar
 // waits until the entire html loads before running the javascript
 document.addEventListener("DOMContentLoaded", function () {  
-  // finds the button that opens/closes the navbar menue on small screens
+  
   const navbarToggler = document.querySelector(".navbar-toggler"); 
-  // finds the collapsible menue section that contains the  navigation links
+  
   const navbarCollapse = document.getElementById("navbarNav");
-// When the toggle button is clicked, the dropdown is shown
+
   navbarToggler.addEventListener("click", function () {
     navbarCollapse.classList.toggle("show");
   });

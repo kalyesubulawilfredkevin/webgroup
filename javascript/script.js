@@ -13,14 +13,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
 //=====Gallery====//
 document.addEventListener("DOMContentLoaded", function () {
-  // waits until the entire html loads before running the javascript
-  // Gets all gallery images
   const galleryImages = document.querySelectorAll(".gallery-item img");
 
-  
-  // loops through each image
+
   galleryImages.forEach((img) => {
-    // Add hover effect
     img.addEventListener("mouseover", function () {
       this.style.transform = "scale(1.05)"; 
       this.style.transition = "transform 0.3s ease"; 
@@ -41,8 +37,6 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // ABOUT US ///
-////
-// waits until the entire html loads before running the javascript
 document.addEventListener("DOMContentLoaded", function () {
   // Team member click interaction
   document.querySelectorAll(".card-body img").forEach((img) => {

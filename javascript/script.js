@@ -64,22 +64,22 @@ document.addEventListener("DOMContentLoaded", function () {
 // waits until the entire html loads before running the javascript
 document.addEventListener("DOMContentLoaded", function () {
   // Hero button animation
-  //  function (e)is the callback function that runs when the button is clicked
+  //  
   document.querySelector(".btn-hero").addEventListener("click", function (e) {
-    // Prevents the default behavior of the button click
+    
     e.preventDefault();
     alert("🚀 Let's start your adventure! Contact us to plan your dream trip.");
     this.style.transform = "scale(0.95)";
-    // Shrinks the button slightly to create a “press” animation
+    
     setTimeout(() => (this.style.transform = "scale(1)"), 200);
-    // after 200 milseconds the button returns to the normal size
+    
   });
 
   // Newsletter form
   document.querySelector("form").addEventListener("submit", function (e) {
     // runs when the form is submitted
-    e.preventDefault(); //prevents the form from submmiting and rteloading the page again
-    const email = this.querySelector('input[type="email"]').value; // finds the email input field
+    e.preventDefault(); 
+    const email = this.querySelector('input[type="email"]').value; 
     alert(`📧 Thanks! We'll send travel updates to ${email}`);
     this.reset();
   });

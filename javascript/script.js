@@ -61,10 +61,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 /// index // home page
 //  Homepage
-// waits until the entire html loads before running the javascript
-document.addEventListener("DOMContentLoaded", function () {
-  // Hero button animation
-  //  
+document.addEventListener("DOMContentLoaded", function () {  
   document.querySelector(".btn-hero").addEventListener("click", function (e) {
     
     e.preventDefault();
@@ -75,9 +72,7 @@ document.addEventListener("DOMContentLoaded", function () {
     
   });
 
-  // Newsletter form
   document.querySelector("form").addEventListener("submit", function (e) {
-    // runs when the form is submitted
     e.preventDefault(); 
     const email = this.querySelector('input[type="email"]').value; 
     alert(`📧 Thanks! We'll send travel updates to ${email}`);
